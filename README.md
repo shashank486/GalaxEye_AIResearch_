@@ -51,7 +51,7 @@ venv\Scripts\activate
 
 # Dataset Structure
 
-## Expected dataset directory structure:
+# Expected dataset directory structure:
  Create the dataset folder in directory include the dataset(train,test,val) in this folder
 
 # 1. Training
@@ -60,13 +60,13 @@ venv\Scripts\activate
 run in Google colab (GPU) (upload the file given python files for training: dataset,model,loss,train.py) or run in any code editor 
 
 - run the below commands before training: 
-- 1
+1. 
 
 ```bash
 !pip install -q huggingface_hub
 ```
 
-- 2
+2. 
  ```bash
  from huggingface_hub import snapshot_download
 
@@ -77,7 +77,7 @@ snapshot_download(
 )
 ```
 
-- 3
+3. 
 ```bash
 from torch.utils.data import DataLoader
 from dataset import ChangeDetectionDataset
@@ -86,20 +86,20 @@ train_dataset = ChangeDetectionDataset(
     "/content/change_dataset/train"
 )
 ```
-- 4
+4. 
 ```bash
 !unzip /content/change_dataset/train.zip -d /content/change_dataset/
 ```
 
-- 5 
+5.  
 ```bash 
 !python train.py
 ```
 
 
-- then download the latest trained model for evalution and testing
+* ## then download the latest trained model for evalution and testing
 
-2. Evaluation
+# 2. Evaluation
 - Run Evaluation
 -  val dataset
 ```bash
@@ -115,7 +115,7 @@ python evaluate.py \
 --weights model_latest.pth
 ```
 
-3. Prediction Visualization
+# 3. Prediction Visualization
 
 - Validation dataset:
 ```bash
