@@ -137,10 +137,7 @@ python visualize.py \
  ```bash
 https://drive.google.com/drive/folders/1bO-nmbV87PZ_4sJNYfFJYzzKaOeps_ks?usp=sharing
 ```
-- hugging face :
-```bash
 
-```
 # Results
  - Validation Results
 
