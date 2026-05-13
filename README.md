@@ -51,10 +51,10 @@ venv\Scripts\activate
 
 # Dataset Structure
 
-# Expected dataset directory structure:
+## Expected dataset directory structure:
  Create the dataset folder in directory include the dataset(train,test,val) in this folder
 
-1. Training
+# 1. Training
 
 ## training from the hugging face dataset
 run in Google colab (GPU) (upload the file given python files for training: dataset,model,loss,train.py) or run in any code editor 
@@ -116,7 +116,6 @@ python evaluate.py \
 ```
 
 3. Prediction Visualization
-- Visualize Predictions
 
 - Validation dataset:
 ```bash
@@ -138,7 +137,10 @@ python visualize.py \
  ```bash
 https://drive.google.com/drive/folders/1bO-nmbV87PZ_4sJNYfFJYzzKaOeps_ks?usp=sharing
 ```
+- hugging face :
+```bash
 
+```
 # Results
  - Validation Results
 
@@ -149,21 +151,12 @@ https://drive.google.com/drive/folders/1bO-nmbV87PZ_4sJNYfFJYzzKaOeps_ks?usp=sha
 | Recall    | 0.0583 |
 | F1 Score  | 0.0229 |
 
-- Test Results
-
-| Metric    | Score  |
-| --------- | ------ |
-| IoU       | 0.0072 |
-| Precision | 0.0081 |
-| Recall    | 0.1184 |
-| F1 Score  | 0.0137 |
-
-- Confusion Matrix (Test)
- 
+- Confusion Matrix (val)
 |                  | Predicted No Change | Predicted Change |
 | ---------------- | ------------------- | ---------------- |
-| Actual No Change | 3,884,505           | 1,120,069        |
-| Actual Change    | 30,610              | 11,088           |
+| Actual No Change | 16,912,570          | 4,480,376        |
+| Actual Change    | 397,509             | 98,569           |
+
 
 # Test Results
 | Metric    | Score  |
