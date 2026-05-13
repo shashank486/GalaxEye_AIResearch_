@@ -206,8 +206,8 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015.
 2. Hugging Face
 
 
-- Author
+* Author
 
-- Shashank B
-- Satellite AI Research Intern Assignment
-- GalaxEye Space
+Shashank B
+Satellite AI Research Intern Assignment
+GalaxEye Space
